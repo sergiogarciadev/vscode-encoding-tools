@@ -1,0 +1,82 @@
+{
+  "name": "vscode-encoding-tools",
+  "publisher": "sergiogarciadev",
+  "displayName": "Encoding Tools",
+  "description": "A simple extension to encode/decode text",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.102.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sergiogarciadev/vscode-encoding-tools"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "base64",
+    "convert",
+    "decode",
+    "decoding",
+    "encode",
+    "encoding",
+    "hex",
+    "hexadecimal"
+  ],
+  "pricing": "Free",
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscode-encoding-tools.frombase64",
+        "category": "Encode",
+        "title": "From Base-64"
+      },
+      {
+        "command": "vscode-encoding-tools.tobase64",
+        "category": "Encode",
+        "title": "To Base-64"
+      },
+      {
+        "command": "vscode-encoding-tools.fromhex",
+        "category": "Encode",
+        "title": "From Hex"
+      },
+      {
+        "command": "vscode-encoding-tools.tohex",
+        "category": "Encode",
+        "title": "To Hex"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "format": "prettier --write --ignore-unknown .",
+    "check-format": "prettier --check .",
+    "test": "vscode-test"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.102.0",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.25.1",
+    "eslint-config-prettier": "^10.1.5",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "prettier": "^3.6.2",
+    "typescript": "^5.8.3"
+  }
+}
