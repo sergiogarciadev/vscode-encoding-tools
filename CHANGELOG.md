@@ -9,6 +9,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### Added
 
 - Support for multiple selections
+- Keybinds and Context Menu
 
 ## [0.0.2]
 

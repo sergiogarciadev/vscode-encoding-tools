@@ -5,6 +5,7 @@
   "description": "A simple extension to encode/decode text",
   "version": "0.0.2",
   "icon": "icon.png",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.102.0"
   },
@@ -33,22 +34,88 @@
       {
         "command": "vscode-encoding-tools.frombase64",
         "category": "Encode",
-        "title": "From Base-64"
+        "title": "From Base-64",
+        "enablement": "editor.hasSelection"
       },
       {
         "command": "vscode-encoding-tools.tobase64",
         "category": "Encode",
-        "title": "To Base-64"
+        "title": "To Base-64",
+        "enablement": "editor.hasSelection"
       },
       {
         "command": "vscode-encoding-tools.fromhex",
         "category": "Encode",
-        "title": "From Hex"
+        "title": "From Hex",
+        "enablement": "editor.hasSelection"
       },
       {
         "command": "vscode-encoding-tools.tohex",
         "category": "Encode",
-        "title": "To Hex"
+        "title": "To Hex",
+        "enablement": "editor.hasSelection"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "vscode-encoding-tools.frombase64",
+        "key": "ctrl+k ctrl+shift+b",
+        "mac": "cmd+k cmd+shift+B",
+        "when": "editor.hasSelection"
+      },
+      {
+        "command": "vscode-encoding-tools.tobase64",
+        "key": "ctrl+k ctrl+b",
+        "mac": "cmd+k cmd+b",
+        "when": "editor.hasSelection"
+      },
+      {
+        "command": "vscode-encoding-tools.fromhex",
+        "key": "ctrl+k ctrl+shift+x",
+        "mac": "cmd+k cmd+shift+x",
+        "when": "editor.hasSelection"
+      },
+      {
+        "command": "vscode-encoding-tools.tohex",
+        "key": "ctrl+k ctrl+x",
+        "mac": "cmd+k cmd+x",
+        "when": "editor.hasSelection"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "submenu": "vscode-encoding-tools.submenu",
+          "group": "vscode-encoding-tools"
+        }
+      ],
+      "vscode-encoding-tools.submenu": [
+        {
+          "command": "vscode-encoding-tools.frombase64",
+          "group": "vscode-encoding-tools@1",
+          "when": "editor.hasSelection"
+        },
+        {
+          "command": "vscode-encoding-tools.tobase64",
+          "group": "vscode-encoding-tools@2",
+          "when": "editor.hasSelection"
+        },
+        {
+          "command": "vscode-encoding-tools.fromhex",
+          "group": "vscode-encoding-tools@3",
+          "when": "editor.hasSelection"
+        },
+        {
+          "command": "vscode-encoding-tools.tohex",
+          "group": "vscode-encoding-tools@4",
+          "when": "editor.hasSelection"
+        }
+      ]
+    },
+    "submenus": [
+      {
+        "id": "vscode-encoding-tools.submenu",
+        "label": "Encode"
       }
     ]
   },
