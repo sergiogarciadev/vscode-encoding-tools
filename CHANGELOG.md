@@ -8,5 +8,25 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### Added
 
+- Support for multiple selections
+
+## [0.0.2]
+
+### Added
+
+- Marketplace icon
+
+### Changed
+
+- Name of extension is now `Encoding Tools`
+
+### Fixed
+
+- Typo in README
+
+## [0.0.1]
+
+### Added
+
 - From/To Base64 Command
 - From/To Hex Command
