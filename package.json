@@ -3,7 +3,8 @@
   "publisher": "sergiogarciadev",
   "displayName": "Encoding Tools",
   "description": "A simple extension to encode/decode text",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "icon": "icon.png",
   "engines": {
     "vscode": "^1.102.0"
   },
