@@ -32,6 +32,11 @@ Encoding support encoding to and from:
 
 ## Release Notes
 
+### 0.0.3
+
+Added support for multiple selections
+Added keybinds and context menu items
+
 ### 0.0.2
 
 Added icon and changed name to `Encoding Tools`
