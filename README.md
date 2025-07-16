@@ -4,10 +4,11 @@ This extensions provide common encoding tools in VS Code commands.
 
 ## Features
 
-Encoding support encoding to and from:
+Encoding Tools support encoding to and from:
 
+- Base16 (Hexadecimal)
+- Base32
 - Base64
-- Hexadecimal
 
 ## Keybinds
 
@@ -15,32 +16,36 @@ Encoding support encoding to and from:
 
 | Key Binding         | Command            |
 |---------------------|--------------------|
-| Ctrl+K Ctrl+B       | Encode to Base64   |
-| Ctrl+K Ctrl+Shift+B | Encode from Base64 |
 | Ctrl+K Ctrl+X       | Encode to Hex      |
 | Ctrl+K Ctrl+Shift+X | Encode from Hex    |
+| Ctrl+K Ctrl+V       | Encode to Base32   |
+| Ctrl+K Ctrl+Shift+V | Encode from Base32 |
+| Ctrl+K Ctrl+B       | Encode to Base64   |
+| Ctrl+K Ctrl+Shift+B | Encode from Base64 |
 
 ### On Mac
 
 | Key Binding       | Command            |
 |-------------------|--------------------|
-| Cmd+K Cmd+B       | Encode to Base64   |
-| Cmd+K Cmd+Shift+B | Encode from Base64 |
 | Cmd+K Cmd+X       | Encode to Hex      |
 | Cmd+K Cmd+Shift+X | Encode from Hex    |
+| Cmd+K Cmd+V       | Encode to Base32   |
+| Cmd+K Cmd+Shift+V | Encode from Base32 |
+| Cmd+K Cmd+B       | Encode to Base64   |
+| Cmd+K Cmd+Shift+B | Encode from Base64 |
 
 
 ## Release Notes
 
 ### 0.0.3
 
-Added support for multiple selections
-Added keybinds and context menu items
+* Added support for multiple selections
+* Added keybinds and context menu items
 
 ### 0.0.2
 
-Added icon and changed name to `Encoding Tools`
+* Added icon and changed name to `Encoding Tools`
 
 ### 0.0.1
 
-Initial release of `vscode-encoding-tools`.
+* Initial release of `vscode-encoding-tools`.

@@ -6,6 +6,16 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+### Added
+
+- From/To Base32 Encoding
+
+### Changed
+
+- Encoder use a new method for simplicity
+
+###
+
 ## [0.0.3]
 
 ### Added

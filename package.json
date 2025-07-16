@@ -32,6 +32,18 @@
   "contributes": {
     "commands": [
       {
+        "command": "vscode-encoding-tools.frombase32",
+        "category": "Encode",
+        "title": "From Base-32",
+        "enablement": "editor.hasSelection"
+      },
+      {
+        "command": "vscode-encoding-tools.tobase32",
+        "category": "Encode",
+        "title": "To Base-32",
+        "enablement": "editor.hasSelection"
+      },
+      {
         "command": "vscode-encoding-tools.frombase64",
         "category": "Encode",
         "title": "From Base-64",
@@ -58,9 +70,21 @@
     ],
     "keybindings": [
       {
+        "command": "vscode-encoding-tools.frombase32",
+        "key": "ctrl+k ctrl+shift+v",
+        "mac": "cmd+k cmd+shift+v",
+        "when": "editor.hasSelection"
+      },
+      {
+        "command": "vscode-encoding-tools.tobase32",
+        "key": "ctrl+k ctrl+v",
+        "mac": "cmd+k cmd+v",
+        "when": "editor.hasSelection"
+      },
+      {
         "command": "vscode-encoding-tools.frombase64",
         "key": "ctrl+k ctrl+shift+b",
-        "mac": "cmd+k cmd+shift+B",
+        "mac": "cmd+k cmd+shift+b",
         "when": "editor.hasSelection"
       },
       {
@@ -91,23 +115,33 @@
       ],
       "vscode-encoding-tools.submenu": [
         {
-          "command": "vscode-encoding-tools.frombase64",
+          "command": "vscode-encoding-tools.fromhex",
           "group": "vscode-encoding-tools@1",
           "when": "editor.hasSelection"
         },
         {
-          "command": "vscode-encoding-tools.tobase64",
+          "command": "vscode-encoding-tools.tohex",
           "group": "vscode-encoding-tools@2",
           "when": "editor.hasSelection"
         },
         {
-          "command": "vscode-encoding-tools.fromhex",
+          "command": "vscode-encoding-tools.frombase32",
           "group": "vscode-encoding-tools@3",
           "when": "editor.hasSelection"
         },
         {
-          "command": "vscode-encoding-tools.tohex",
+          "command": "vscode-encoding-tools.tobase32",
           "group": "vscode-encoding-tools@4",
+          "when": "editor.hasSelection"
+        },
+        {
+          "command": "vscode-encoding-tools.frombase64",
+          "group": "vscode-encoding-tools@5",
+          "when": "editor.hasSelection"
+        },
+        {
+          "command": "vscode-encoding-tools.tobase64",
+          "group": "vscode-encoding-tools@6",
           "when": "editor.hasSelection"
         }
       ]

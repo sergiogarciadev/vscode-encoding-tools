@@ -1,9 +1,8 @@
 import { ReadableBitStream } from "./ReadableBitStream";
 import { WritableBitStream } from "./WritableBitStream";
 
-export class Base64 {
-  private alphabet: string =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+export class Base32 {
+  private alphabet: string = "abcdefghijklmnopqrstuvwxyz234567=";
 
   public encode(str: string) {
     const reader = ReadableBitStream.fromString(str);
@@ -11,12 +10,12 @@ export class Base64 {
     let output = "";
 
     while (!reader.eof) {
-      output += this.alphabet[reader.readBits(6)];
+      output += this.alphabet[reader.readBits(5)];
     }
 
     // add padding
-    while (output.length % 4 !== 0) {
-      output += this.alphabet[64];
+    while (output.length % 8 !== 0) {
+      output += this.alphabet[32];
     }
 
     return output;
@@ -26,7 +25,7 @@ export class Base64 {
     const writer = new WritableBitStream();
 
     for (let i = 0; i < input.length; i++) {
-      if (input[i] === this.alphabet[64]) {
+      if (input[i] === this.alphabet[32]) {
         break;
       }
 
@@ -36,7 +35,7 @@ export class Base64 {
         continue;
       }
 
-      writer.writeBits(value, 6);
+      writer.writeBits(value, 5);
     }
 
     if (writer.stream[writer.stream.length - 1] === 0) {
