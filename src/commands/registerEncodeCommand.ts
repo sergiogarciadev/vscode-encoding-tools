@@ -25,8 +25,6 @@ export function registerEncodeCommand(
       const document = editor.document;
       const selections = editor.selections;
 
-      console.log(selections.length);
-
       let replaces: ReplaceEdit[] = [];
 
       for (let selection of selections) {
