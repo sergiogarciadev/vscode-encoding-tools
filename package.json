@@ -3,7 +3,7 @@
   "publisher": "sergiogarciadev",
   "displayName": "Encoding Tools",
   "description": "A simple extension to encode/decode text",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "icon": "icon.png",
   "license": "MIT",
   "engines": {

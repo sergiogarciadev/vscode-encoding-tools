@@ -6,6 +6,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [0.1.0]
+
 ### Added
 
 - From/To Base32 Encoding
@@ -13,8 +15,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### Changed
 
 - Encoder use a new method for simplicity
-
-###
 
 ## [0.0.3]
 
