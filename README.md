@@ -37,7 +37,7 @@ Encoding Tools support encoding to and from:
 
 ## Release Notes
 
-### 0.1.0
+### 0.1.2
 
 * Added From/To Base32 Encoding
 * Changed encoders to use a new method for simplicity
