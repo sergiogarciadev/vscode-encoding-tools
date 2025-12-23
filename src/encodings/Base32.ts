@@ -29,7 +29,7 @@ export class Base32 {
         break;
       }
 
-      const value = this.alphabet.indexOf(input[i]);
+      const value = this.alphabet.indexOf(input[i].toLowerCase());
 
       if (value === -1) {
         continue;

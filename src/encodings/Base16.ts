@@ -26,7 +26,7 @@ export class Base16 {
     const writer = new WritableBitStream();
 
     for (let i = 0; i < input.length; i++) {
-      writer.writeBits(this.alphabet.indexOf(input[i]), 4);
+      writer.writeBits(this.alphabet.indexOf(input[i].toLowerCase()), 4);
     }
 
     return writer.toString();

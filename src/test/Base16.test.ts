@@ -11,6 +11,8 @@ suite("Encode Base16 Tests", () => {
 
   test("Decoding test", () => {
     assert.strictEqual(hex.decode("616263646566"), "abcdef");
+    assert.strictEqual(hex.decode("616263646566"), "abcdef");
     assert.strictEqual(hex.decode("656d6f6a69f09f94a574657374"), "emoji🔥test");
+    assert.strictEqual(hex.decode("656D6F6A69F09F94A574657374"), "emoji🔥test");
   });
 });
