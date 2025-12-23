@@ -26,5 +26,10 @@ suite("Encoder Base32 Tests", () => {
         assert.strictEqual(base32.decode("mfrgg"), "abc");
         assert.strictEqual(base32.decode("mfrggza"), "abcd");
         assert.strictEqual(base32.decode("mfrggzdf"), "abcde");
+        assert.strictEqual(base32.decode("ME"), "a");
+        assert.strictEqual(base32.decode("MFRA"), "ab");
+        assert.strictEqual(base32.decode("MFRGG"), "abc");
+        assert.strictEqual(base32.decode("MFRGGZA"), "abcd");
+        assert.strictEqual(base32.decode("MFRGGZDF"), "abcde");
     });
 });
