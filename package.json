@@ -3,11 +3,11 @@
   "publisher": "sergiogarciadev",
   "displayName": "Encoding Tools",
   "description": "A simple extension to encode/decode text",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "icon": "icon.png",
   "license": "MIT",
   "engines": {
-    "vscode": "1.106.0"
+    "vscode": "1.107.0"
   },
   "repository": {
     "type": "git",
